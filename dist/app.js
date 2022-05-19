@@ -1,8 +1,21 @@
 "use strict";
-const btn = document.getElementById('menu-btn');
-const nav = document.getElementById('menu');
-btn === null || btn === void 0 ? void 0 : btn.addEventListener('click', function (event) {
-    btn.classList.toggle('open');
-    nav === null || nav === void 0 ? void 0 : nav.classList.toggle('flex');
-    nav === null || nav === void 0 ? void 0 : nav.classList.toggle('hidden');
+const btn = document.getElementById("menu-btn");
+const nav = document.getElementById("menu");
+const input = document.getElementById('text-input');
+const submit = document.getElementById('submit-btn');
+const form = document.getElementById('form');
+btn.addEventListener("click", function (event) {
+    btn.classList.toggle("open");
+    nav.classList.toggle("flex");
+    nav.classList.toggle("hidden");
+});
+submit.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log(input === null || input === void 0 ? void 0 : input.value);
+    if (input.value == "") {
+        input.classList.add('placeholder-red');
+        input.classList.add('form-error');
+        input.setAttribute('placeholder', 'e.g. abc@email.com');
+        form.classList.add('input-error-msg');
+    }
 });

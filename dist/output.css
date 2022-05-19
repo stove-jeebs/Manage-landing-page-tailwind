@@ -838,6 +838,8 @@ body {
   background-position: 90% -25%;
 }
 
+/* svg icons */
+
 .facebook {
   width: 20px;
   height: 20px;
@@ -1010,10 +1012,10 @@ body {
   }
 
   .facebook,
-	.youtube,
-	.twitter,
-	.pinterest,
-	.instagram {
+  .youtube,
+  .twitter,
+  .pinterest,
+  .instagram {
     transform: scale(1.5);
     width: 50px;
     height: 50px;
@@ -1046,7 +1048,7 @@ body {
   transform: rotate(0);
   transition: all 50ms;
   --tw-bg-opacity: 1;
-  background-color: hsl(228 39% 23% / var(--tw-bg-opacity))
+  background-color: hsl(228 39% 23% / var(--tw-bg-opacity));
 }
 
 .hamburger-middle {
@@ -1072,6 +1074,34 @@ body {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* form validation */
+
+.placeholder-red::-moz-placeholder {
+  color: red;
+}
+
+.placeholder-red:-ms-input-placeholder {
+  color: red;
+}
+
+.placeholder-red::placeholder {
+  color: red;
+}
+
+.form-error {
+  color: red;
+  border-width: 2px;
+  border-color: red;
+}
+
+.input-error-msg::after {
+  content: "Please insert a valid email";
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 15px;
 }
 
 .hover\:bg-gray-300:hover {

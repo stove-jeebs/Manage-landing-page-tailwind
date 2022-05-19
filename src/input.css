@@ -3,149 +3,170 @@
 @tailwind utilities;
 
 body {
-	background-image: url(../img/bg-tablet-pattern.svg);
-	background-repeat: no-repeat;
-	background-size: 800px;
-	background-position: 90% -25%;
+  background-image: url(../img/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%;
 }
 
+/* svg icons */
+
 .facebook {
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	-webkit-mask: url(../img/icon-facebook.svg) no-repeat center;
-	mask: url(../img/icon-facebook.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  -webkit-mask: url(../img/icon-facebook.svg) no-repeat center;
+  mask: url(../img/icon-facebook.svg) no-repeat center;
 }
 
 .youtube {
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	-webkit-mask: url(../img/icon-youtube.svg) no-repeat center;
-	mask: url(../img/icon-youtube.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  -webkit-mask: url(../img/icon-youtube.svg) no-repeat center;
+  mask: url(../img/icon-youtube.svg) no-repeat center;
 }
 
 .twitter {
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	-webkit-mask: url(../img/icon-twitter.svg) no-repeat center;
-	mask: url(../img/icon-twitter.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  -webkit-mask: url(../img/icon-twitter.svg) no-repeat center;
+  mask: url(../img/icon-twitter.svg) no-repeat center;
 }
 
 .pinterest {
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	-webkit-mask: url(../img/icon-pinterest.svg) no-repeat center;
-	mask: url(../img/icon-pinterest.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  -webkit-mask: url(../img/icon-pinterest.svg) no-repeat center;
+  mask: url(../img/icon-pinterest.svg) no-repeat center;
 }
 
 .instagram {
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	-webkit-mask: url(../img/icon-instagram.svg) no-repeat center;
-	mask: url(../img/icon-instagram.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  -webkit-mask: url(../img/icon-instagram.svg) no-repeat center;
+  mask: url(../img/icon-instagram.svg) no-repeat center;
 }
 
 .icon-hover:hover {
-	@apply bg-brightRed;
+  @apply bg-brightRed;
 }
 
 #cta {
-	background-image: url(../img/bg-simplify-section-desktop.svg);
-	background-repeat: no-repeat;
+  background-image: url(../img/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
 }
 
 .button {
-	@apply p-3 px-6 text-white rounded-full bg-brightRed hover:bg-brightRedLight;
-	max-width: 130px;
-	box-shadow: 0 10px 15px -10px hsl(12, 88%, 59%);
+  @apply p-3 px-6 text-white rounded-full bg-brightRed hover:bg-brightRedLight;
+  max-width: 130px;
+  box-shadow: 0 10px 15px -10px hsl(12, 88%, 59%);
 }
 
 .flex-container {
-	@apply container flex px-6 mx-auto mt-10 md:flex-row space-y-12 md:space-y-0;
+  @apply container flex px-6 mx-auto mt-10 md:flex-row space-y-12 md:space-y-0;
 }
 
 .flex-item {
-	@apply flex flex-col items-center space-y-12 md:w-1/2 md:items-start ;
+  @apply flex flex-col items-center space-y-12 md:w-1/2 md:items-start;
 }
 
 .paragraph {
-	@apply max-w-sm text-center text-darkGrayishBlue md:text-left;
+  @apply max-w-sm text-center text-darkGrayishBlue md:text-left;
 }
 
 @media (max-width: 576px) {
-	body {
-		background-position: 50px -50px;
-		background-size: 500px;
-	}
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
 
-	#cta {
-		background-image: url(../img/bg-simplify-section-mobile.svg);
-	}
+  #cta {
+    background-image: url(../img/bg-simplify-section-mobile.svg);
+  }
 
-	.facebook,
-	.youtube,
-	.twitter,
-	.pinterest,
-	.instagram {
-		transform: scale(1.5);
-		width: 50px;
-		height: 50px;
-	}
-	
-	#logo {
-		transform: scale(1.5);
-		margin-bottom: 3em;
-	}
+  .facebook,
+  .youtube,
+  .twitter,
+  .pinterest,
+  .instagram {
+    transform: scale(1.5);
+    width: 50px;
+    height: 50px;
+  }
+
+  #logo {
+    transform: scale(1.5);
+    margin-bottom: 3em;
+  }
 }
-
 
 /* hamburger menu */
 .hamburger {
-	cursor: pointer;
-	width: 24px;
-	height: 24px;
-	transition: all 250ms;
-	position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 250ms;
+  position: relative;
 }
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 24px;
-	height: 2.5px;
-	transform: rotate(0);
-	transition: all 50ms;
-	@apply bg-darkBlue
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2.5px;
+  transform: rotate(0);
+  transition: all 50ms;
+  @apply bg-darkBlue;
 }
 
 .hamburger-middle {
-	transform: translateY(7px);
+  transform: translateY(7px);
 }
 
 .hamburger-bottom {
-	transform: translateY(14px);
+  transform: translateY(14px);
 }
 
 .open {
-	transform: rotate(90deg);
-	transform: translateY(0px);
+  transform: rotate(90deg);
+  transform: translateY(0px);
 }
 
 .open .hamburger-top {
-	transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
 .open .hamburger-middle {
-	display: none;
+  display: none;
 }
 
 .open .hamburger-bottom {
-	transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* form validation */
+
+.placeholder-red::placeholder {
+	color: red;
+}
+
+.form-error {
+	color: red;
+	border-width: 2px;
+	border-color: red;
+}
+
+.input-error-msg::after {
+	content: "Please insert a valid email";
+	color: red;
+	font-style: italic;
+	font-size: 14px;
+	margin-left: 15px;
 }
