@@ -1,8 +1,8 @@
 const btn = document.getElementById("menu-btn") as HTMLButtonElement;
 const nav = document.getElementById("menu") as HTMLDivElement;
-const input = document.getElementById('text-input') as HTMLInputElement
-const submit = document.getElementById('submit-btn') as HTMLButtonElement
-const form = document.getElementById('form') as HTMLDivElement
+const input = document.getElementById("text-input") as HTMLInputElement;
+const submit = document.getElementById("submit-btn") as HTMLButtonElement;
+const form = document.getElementById("form") as HTMLDivElement;
 
 btn.addEventListener("click", function (event) {
   btn.classList.toggle("open");
@@ -11,12 +11,12 @@ btn.addEventListener("click", function (event) {
 });
 
 submit.addEventListener("click", function (event) {
-	event.preventDefault()
-	console.log(input?.value)
-	if (input.value == "") {
-		input.classList.add('placeholder-red')
-		input.classList.add('form-error')
-		input.setAttribute('placeholder', 'e.g. abc@email.com')
-		form.classList.add('input-error-msg')
-	}
+  event.preventDefault();
+  console.log(input?.value);
+  if (input.value == "") {
+    input.classList.add("placeholder-red");
+    input.classList.add("form-error");
+    input.setAttribute("placeholder", "e.g. abc@email.com");
+    form.classList.add("input-error-msg");
+  }
 });

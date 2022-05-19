@@ -154,19 +154,19 @@ body {
 /* form validation */
 
 .placeholder-red::placeholder {
-	color: red;
+  color: red;
 }
 
 .form-error {
-	color: red;
-	border-width: 2px;
-	border-color: red;
+  color: red;
+  border-width: 2px;
+  border-color: red;
 }
 
 .input-error-msg::after {
-	content: "Please insert a valid email";
-	color: red;
-	font-style: italic;
-	font-size: 14px;
-	margin-left: 15px;
+  content: "Please insert a valid email";
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 15px;
 }
