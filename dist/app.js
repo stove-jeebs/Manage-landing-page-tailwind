@@ -11,7 +11,6 @@ btn.addEventListener("click", function (event) {
 });
 submit.addEventListener("click", function (event) {
     event.preventDefault();
-    console.log(input === null || input === void 0 ? void 0 : input.value);
     if (input.value == "") {
         input.classList.add("placeholder-red");
         input.classList.add("form-error");
